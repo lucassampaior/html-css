@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: rgb(85, 85, 85);
+            margin: 0%;
+        }
+         header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 20px 20px 0px;
+         }
+         main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px 0px 20px;
+         }
+         article {
+            background-color: lightgrey;
+         }
+         article > aside {
+            display: inline-block;
+            background-color: rgb(167, 167, 167);
+         }
+         
+         footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+         }
+         
+         
+         nav {
+            background-color: brown;
+            padding: 3px;
+            box-shadow: 1px 1px 5px rgb(145, 145, 145);
+         }
+         nav > a:hover {
+            color: burlywood;
+         }
+         a {
+            text-decoration: none;
+            color: white;
+            margin: 0 12px 0 12px;
+            
+         }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>MeuSite.com</h1>
+        <nav>
+            <a href="#">Esportes</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Mundial</a>
+            <a href="#">Novidades</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <span>Esporte</span>
+            <span>Política</span>
+            <span>Tecnologia</span>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Sobre o Brasil</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium possimus voluptate sit cupiditate dolor quia officiis eveniet, quae, assumenda nostrum rem. Fugit temporibus ut, id dolorem debitis voluptas quidem? Impedit.</p>
+                <aside>Artigo escrito por John</aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas</p>
+    </footer>
+</body>
+</html>
